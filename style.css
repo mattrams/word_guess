@@ -1,0 +1,80 @@
+*{
+  margin:0;
+  font-family:helvetica;
+}
+
+h1{
+    margin: 10px 0;
+}
+
+button{
+  padding:5px;
+  margin:5px 0;
+  border-radius:10px;
+}
+
+#keyboard button{
+    margin: 0 1px;
+    padding:5px 10px;
+}
+
+#play{
+  background-color:#9A9C5F;
+  color:white;
+  padding:10px 50px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+body{
+  background-image:url('lilac.jpg');
+  display:flex;
+  height:100vh;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-content:center;
+}
+
+#mainContainer{
+  background-color:#d4adff;
+  display:flex;
+  flex-direction:column;
+  width:350px;
+  align-items:center;
+  border:1px solid gray;
+  border-radius:20px;
+  text-align:center;
+}
+
+#afterplay{
+  display:none;
+}
+
+#guesses{
+    border:solid;
+    border-width:2px;
+    background-color:white;
+    margin:10px 0;
+    padding:5px;
+    border-radius:5px;
+    font-weight: 600;
+    letter-spacing:2px;
+}
+
+span{
+    background-color:white;
+    margin:2px;
+    padding:5px;
+    border-radius:5px;
+    font-weight: 600;
+}
+
+#unders{
+    margin: 20px 0;
+}
+
+#result{
+    font-weight: 600;
+    margin:10px 0;
+}
