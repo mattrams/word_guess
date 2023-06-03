@@ -83,3 +83,13 @@ span{
   margin-top:10px;
   margin-bottom:10px;
 }
+
+input{
+  border-radius:7px;
+}
+
+#check{
+  background-color:#9A9C5F;
+  color:white;
+  font-weight: 600;
+}
