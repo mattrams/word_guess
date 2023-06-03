@@ -78,3 +78,8 @@ span{
     font-weight: 600;
     margin:10px 0;
 }
+
+#kb1,#kb2,#kb3{
+  margin-top:10px;
+  margin-bottom:10px;
+}
