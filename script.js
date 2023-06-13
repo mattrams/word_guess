@@ -10,6 +10,8 @@ let userInp = document.querySelector('#userInp')
 let kb1Ele = document.querySelector('#kb1')
 let kb2Ele = document.querySelector('#kb2')
 let kb3Ele = document.querySelector('#kb3')
+let keyboard = document.querySelector('#keyboard')
+let keyboardBtns;
 let usedChrs = []
 let randomWord;
 let underWordArr;
@@ -32,6 +34,13 @@ function kbrow(arr,usedChrs){
   return kbEle
 }
 
+function disableKeyboard(){
+  for(btn of keyboardBtns){
+    btn.disabled = true
+    console.log(btn)
+  }
+}
+
 function checkGuess(ch){
   usedChrs.push(ch)
   createKeyboard()
@@ -49,17 +58,20 @@ function checkGuess(ch){
     result.style.color = 'green'
     result.innerText = 'You won!'
     check.disabled = true
+    disableKeyboard()
   }
   else if(inp === randomWord){
     unders.innerHTML = "<span>" + inp.split('').join('</span><span>') + "</span>"
     result.style.color = 'green'
     result.innerText = 'You won!'
     check.disabled = true
+    disableKeyboard()
   }
   else if(guesses === 1){
     result.style.color = 'red'
     result.innerText = 'You lose!'
     check.disabled = true
+    disableKeyboard()
     guessesEle.innerText = 'Guesses remaining: 0'
     unders.innerText = 'The correct word is: ' + randomWord.split('').join(' ')
   }
@@ -79,6 +91,7 @@ play.addEventListener('click',()=>{
   underWordArr = [];
   usedChrs = [];
   createKeyboard()
+  keyboardBtns = document.querySelectorAll('#keyboard button')
   check.disabled = false
   result.innerText = ''
   afterplay.style.display = 'block'
