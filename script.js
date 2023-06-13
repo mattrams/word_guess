@@ -85,13 +85,13 @@ function createKeyboard(){
   kb1Ele.innerHTML = kbrow(kb1,usedChrs)
   kb2Ele.innerHTML = kbrow(kb2,usedChrs)
   kb3Ele.innerHTML = kbrow(kb3,usedChrs)
+  keyboardBtns = document.querySelectorAll('#keyboard button')
 }
 
 play.addEventListener('click',()=>{
   underWordArr = [];
   usedChrs = [];
   createKeyboard()
-  keyboardBtns = document.querySelectorAll('#keyboard button')
   check.disabled = false
   result.innerText = ''
   afterplay.style.display = 'block'
