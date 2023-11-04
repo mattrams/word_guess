@@ -28,7 +28,7 @@ button{
 }
 
 body{
-  background-image:url('lilac.jpg');
+  background-image:url('Images/lilac.jpg');
   display:flex;
   height:100vh;
   flex-wrap:wrap;
@@ -92,4 +92,25 @@ input{
   background-color:#9A9C5F;
   color:white;
   font-weight: 600;
+}
+
+#btn-sound{
+  position:absolute;
+  right:20px;
+  top:20px;
+  background-color:rgba(255, 255, 255, 0.5);
+  padding:10px;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+#btn-sound img{
+  height:30px;
+  width:30px;
+}
+
+
+
+#btn-sound-off{
+  display:none;
 }

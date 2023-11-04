@@ -7,8 +7,16 @@
     <title>Hangman</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <audio id="game-win" src="Sounds/game-win.mp3"></audio>
+  <audio id="game-lose" src="Sounds/game-lose.mp3"></audio>
+  <audio id="correct-beep" src="Sounds/success.mp3"></audio>
+  <audio id="wrong-beep" src="Sounds/failure.mp3"></audio>
+  <audio id="background-music" src="Sounds/neon-gaming.mp3" loop></audio>
+  <btn id="btn-sound">
+    <img id="btn-sound-on" src="Images/volume.png">
+    <img id="btn-sound-off" src="Images/volume-mute.png">
+  </btn>
     <div id='mainContainer'>
         <h1>Hangman</h1>
         <button id='play'>Play</button>
@@ -27,6 +35,5 @@
         </div>
       </div>
       <script src="script.js"></script>
-      
 </body>
 </html>
