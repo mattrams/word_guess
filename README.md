@@ -22,7 +22,7 @@ The game is powered by JavaScript, which handles the logic and functionality of 
     * A leaderboard that shows your best scores for each difficulty level.
 
 ## Credits 🙏
-The game was created by me, <b>mattrams</b>, who is a JavaScript enthusiast and a web developer. 
+The game was created by me, <b>mattrams</b>. I'm new to programming and eager to learn more. 
 
 The game was made as a personal project to practice and showcase my skills in JavaScript, HTML, and CSS.
 
